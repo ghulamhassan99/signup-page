@@ -1,0 +1,109 @@
+        /* Unique Navbar Styles */
+        .navbar {
+            width: 100vw;
+            background: linear-gradient(90deg, #273c75 0%, #40739e 100%);
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            height: 60px;
+        }
+        .navbar .logo {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 10%;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar ul li a:hover {
+            background: #fff;
+            color: #273c75;
+        }
+        .navbar .profile {
+            color: #fff;
+            font-size: 1rem;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar .profile img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        /* Push content below navbar */
+        body {
+            padding-top: 70px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #273c75;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #353b48;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="email"], input[type="password"] {
+            padding: 8px 10px;
+            border: 1px solid #dcdde1;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button[type="button"] {
+            background: #273c75;
+            color: #fff;
+            border: none;
+            padding: 10px 0;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+        button[type="button"]:hover {
+            background: #40739e;
+        }
+        #login-form {
+            margin-top: 10px;
+        }
